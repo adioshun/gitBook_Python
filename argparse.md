@@ -14,19 +14,34 @@ parser = argparse.ArgumentParser() # argparse의 기능을 사용하기 위해 a
 
 # argparse Option 설정 
 parser.add_argument("echo", help="echo the string you use here") #add_argument를 통해 옵션 리스트를 추가
+parser.add_argument('X', type=int,  # `X`는 ID로 뒤에서 처리할 것 지정 
+            help="What is the first number?")
+parser.add_argument('Y', type=int,
+            help="What is the second number?")
 
 
 # argparse Option 동작 구간 설정
-args = parser.parse_args()
+args = parser.parse_args()  #파서로 받아 온것은 `args` 라는 인스턴스에 저장 
+X = args.X
+Y = args.Y
+print("%d + %d = %d" % (X, Y, X+Y))
 print(args.echo)
 ```
 
 .add_argument(name or flags...[,action][,nargs][,default][,type][,choices][,required][,help][,metavar][,dest])
 
 - 우선 한 번에 한 종류의 스위치를 등록할 수 있다.
-- name or flags : 등록할 파라미터의 이름이나 스위치를 등록한다. “foo”, “-f”, “–foo” 등이 가능하다.
-- action: 스위치가 주어졌을 때, 표준 동작을 정한다. 기본값은 “store”이고 이는 주어진 스위치의 옵션 값을 플래그(혹은 이름)의 키에 저장한다. 단지 on/off 개념의 스위치라면 "store_true"를 줄 수 있다. 또 배열형태로 저장될 복수 사용되는 스위치([[GCC의 ‘-I’ 옵션]] 같은)에는 "append"를 줄 수 있다. 개수만 세는 경우 “count”를 줄 수도 있고.
-- nargs : 스위치나 파라미터가 받을 수 있는 값의 개수를 가리킨다. 이 값보다 많은 값이 들어오는 경우 무시된다. “+”로 설정하는 경우 1개 이상.
+- name or flags : 등록할 파라미터의 이름이나 스위치를 등록한다. (eg. “-f”, “–foo”)
+    - `-`있으면 : Optional Argument
+    - `-`없으면 : 그냥 Argument 
+- action: 스위치가 주어졌을 때, 표준 동작을 정한다. 
+    - 기본값은 “store”이고 이는 주어진 스위치의 옵션 값을 플래그(혹은 이름)의 키에 저장한다. 단지 
+- nargs : 스위치나 파라미터가 받을 수 있는 값의 개수를 가리킨다. 
+    - 1 , 2 , 3 ... : 정해진 수의 argument 를 가져다 list 로 만든다.
+    - '?' : 1개의 argument 를 소모한다.
+    - '*' : option 뒤에 붙은 모든 녀석들을 list 로 만들어준다.
+    - '+' : '*' 와 같다. 다만 argument 가 1개도 없다면 error 를 보여준다.
+    - argparse.REMAINDER : 남은 argument 를 묶어서 list 로 준다.
 - default: 뒤에 별도 값이 없는 경우 디폴트로 들어갈 값
 - type: 파싱하여 저장할 때 타입을 변경할 수 있다.
 - choices: 리스트 형태로 전달하면, 리스트의 원소와 일치하는 것만 취한다.
