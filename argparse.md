@@ -21,9 +21,9 @@ args = parser.parse_args()
 print(args.echo)
 ```
 
-### 1.1 .add_argument(name or flags...[,action][,nargs][,default][,type][,choices][,required][,help][,metavar][,dest])
+.add_argument(name or flags...[,action][,nargs][,default][,type][,choices][,required][,help][,metavar][,dest])
 
-우선 한 번에 한 종류의 스위치를 등록할 수 있다.
+- 우선 한 번에 한 종류의 스위치를 등록할 수 있다.
 - name or flags : 등록할 파라미터의 이름이나 스위치를 등록한다. “foo”, “-f”, “–foo” 등이 가능하다.
 - action: 스위치가 주어졌을 때, 표준 동작을 정한다. 기본값은 “store”이고 이는 주어진 스위치의 옵션 값을 플래그(혹은 이름)의 키에 저장한다. 단지 on/off 개념의 스위치라면 "store_true"를 줄 수 있다. 또 배열형태로 저장될 복수 사용되는 스위치([[GCC의 ‘-I’ 옵션]] 같은)에는 "append"를 줄 수 있다. 개수만 세는 경우 “count”를 줄 수도 있고.
 - nargs : 스위치나 파라미터가 받을 수 있는 값의 개수를 가리킨다. 이 값보다 많은 값이 들어오는 경우 무시된다. “+”로 설정하는 경우 1개 이상.
@@ -34,6 +34,9 @@ print(args.echo)
 - help: –help 옵션을 받았을 때, 표시될 메시지 목록에서 스위치의 도움말을 설정한다.
 - metavar: usage 메시지를 출력할 때 표시할 메타변수이름을 지정해준다.
 - dest : 스위치나 파라미터이름이 아닌 별도의 변수를 지정할 때 쓴다. 외부에서 변수를 미리 선언한 경우, 해당 변수에 값이 들어간다.
+
+.parse_args()
+- 각 인자의 리스트를 받아 이를 파싱한 결과를 되돌려 준다. 파싱된 결과는 하나의 네임스페이스를 갖는 객체로 모든 스위치 이름들은 이 객체의 속성 이름으로 정의되어 있다.
 
 ## 2. 선택 인자 
 ```python 
