@@ -32,5 +32,5 @@ print caffe.__version__"
 
 - [Awesome Python](https://github.com/vinta/awesome-python)
 
-- [파이썬 코딩의 기술](https://github.com/gilbutITbook/006764)
+- [파이썬 코딩의 기술](https://github.com/gilbutITbook/006764): 길벗 IT전문서 
 ---
