@@ -7,4 +7,5 @@
 * [argparse](argparse.md)
 * [Tools\_libs](toolslibs.md)
 * [Tips](tips.md)
+* [IDE](ide.md)
 

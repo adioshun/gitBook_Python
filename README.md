@@ -25,9 +25,9 @@ print caffe.__version__"
 
 ---
 ![](https://wikidocs.net/images//book/PythonSnippets_1IAmCXR.jpg)
-[Python Snippets - 파이썬 조각 코드 모음집](https://wikidocs.net/book/536)
 
----
+- [Python Snippets - 파이썬 조각 코드 모음집](https://wikidocs.net/book/536)
 
-![](https://i.imgur.com/IuT9NA8.png)
-[A collection of interesting and tricky Python examples.](https://github.com/satwikkansal/wtfpython)
+- [A collection of interesting and tricky Python examples.](https://github.com/satwikkansal/wtfpython)
+
+- [Awesome Python](https://github.com/vinta/awesome-python)
