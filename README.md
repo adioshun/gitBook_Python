@@ -22,3 +22,7 @@ print caffe.__version__"
 
 !printenv
 ```
+
+---
+![](https://wikidocs.net/images//book/PythonSnippets_1IAmCXR.jpg)
+[Python Snippets - 파이썬 조각 코드 모음집](https://wikidocs.net/book/536)
