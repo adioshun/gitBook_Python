@@ -32,4 +32,6 @@ print caffe.__version__"
 
 - [Awesome Python](https://github.com/vinta/awesome-python)
 
+![](https://github.com/gilbutITbook/006764/raw/master/cover.jpg)
+[파이썬 코딩의 기술](https://github.com/gilbutITbook/006764)
 ---
