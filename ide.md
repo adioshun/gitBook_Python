@@ -1,3 +1,5 @@
+![](https://github.com/ets-labs/python-vimrc/wiki/img/screenshot.png)
+[PYTHON .VIMRC](https://github.com/ets-labs/python-vimrc),[한글설명](http://chanacademy.tistory.com/37)
 
 
 ## Editor Plugins and IDEs
