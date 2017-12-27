@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [List\_of\_Python](listof-python.md)
 * [Logging](logging.md)
 * [Debugging](debugging.md)
 * [Video\_handling](videohandling.md)
@@ -8,5 +9,5 @@
 * [Tools\_libs](toolslibs.md)
 * [Tips](tips.md)
 * [IDE](ide.md)
-* [Crawler](crawler.md)
+* List\_of\_Python
 
