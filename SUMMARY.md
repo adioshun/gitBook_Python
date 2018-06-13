@@ -10,4 +10,6 @@
 * [Tips](tips.md)
 * [IDE](ide.md)
 * List\_of\_Python
+* [Package\_Numpy](packagenumpy.md)
+  * [Indexing\_slicing](packagenumpy/indexingslicing.md)
 
