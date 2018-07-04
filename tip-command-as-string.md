@@ -1,9 +1,10 @@
 
 ```python
 
-for GROUP_ID in np.unique(labels):
+for GROUP_ID in range(0,n_clusters_):
+    print(GROUP_ID)
     globals()['label_{}'.format(int(GROUP_ID))] = concate[concate[:,3] == int(GROUP_ID)]
-    #exec('labela_{0} = concate[concate[:,3] == {0}]'.format(int(GROUP_ID), int(GROUP_ID)))
+    exec('label_{}[:,3:4]=random_color[{}]'.format(GROUP_ID, GROUP_ID))
 
 ```
 
