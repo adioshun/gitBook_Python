@@ -13,4 +13,5 @@
 * [Package\_Pandas](packagepandas.md)
 * [Package\_Numpy](packagenumpy.md)
   * [Indexing\_slicing](packagenumpy/indexingslicing.md)
+* [\[Tip\] Command as string](tip-command-as-string.md)
 
