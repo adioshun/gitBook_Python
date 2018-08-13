@@ -14,4 +14,5 @@
 * [Package\_Numpy](packagenumpy.md)
   * [Indexing\_slicing](packagenumpy/indexingslicing.md)
 * [\[Tip\] Command as string](tip-command-as-string.md)
+* [Python with C++](python-with-c++.md)
 
