@@ -16,3 +16,12 @@ import better_exceptions
 > 참고 : https://github.com/Qix-/better-exceptions
 
 
+#  PDB 
+
+![](https://i.imgur.com/ofC3aqx.png)
+
+import pdb
+
+디버깅 원하는 곳에 `pdb.set_trace()` 추가 
+
+"python -m pdb 파이선파일.py
