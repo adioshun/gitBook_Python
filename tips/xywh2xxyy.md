@@ -1,17 +1,4 @@
-  Takes a bounding box in the form [x1,y1,x2,y2] and returns z in the form
-    [x,y,s,r] where x,y is the centre of the box and s is the scale/area and r is
-    the aspect ratio
-  """
-[x1 = 0
-,y1 = 1
-,x2 = 2
-,y2 = 3
-] 
-
-
-
-
-
+```python
 def iou(bb_test,bb_gt):
   """
   Computes IUO between two bboxes in the form [x1,y1,x2,y2]
@@ -27,7 +14,9 @@ def iou(bb_test,bb_gt):
     + (bb_gt[2]-bb_gt[0])*(bb_gt[3]-bb_gt[1]) - wh)
   print("IOU :{}".format(o))
   return(o)
+```
 
+```python
 def convert_bbox_to_z(bbox):
   """
   Takes a bounding box in the form [x1,y1,x2,y2] and returns z in the form
@@ -46,6 +35,10 @@ def convert_bbox_to_z(bbox):
   s = w*h    #scale is just area
   r = w/float(h)
   return np.array([x,y,s,r]).reshape((4,1))
+  """
+```
+
+```python
 
 def convert_x_to_bbox(x,score=None):
   """
@@ -58,3 +51,4 @@ def convert_x_to_bbox(x,score=None):
     return np.array([x[0]-w/2.,x[1]-h/2.,x[0]+w/2.,x[1]+h/2.]).reshape((1,4))
   else:
     return np.array([x[0]-w/2.,x[1]-h/2.,x[0]+w/2.,x[1]+h/2.,score]).reshape((1,5))
+```
