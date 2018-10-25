@@ -15,4 +15,6 @@
   * [Indexing\_slicing](packagenumpy/indexingslicing.md)
 * [\[Tip\] Command as string](tip-command-as-string.md)
 * [Python with C++](python-with-c++.md)
+* [opencv](opencv.md)
+  * [visualization](opencv/visualization.md)
 
