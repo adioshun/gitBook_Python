@@ -11,6 +11,8 @@
 
 ## 2. Cython (Not CPython)
 
+> python -> C로 변환 
+
 - C 뿐만 아니라 C++도 네이티브로 지원
 - 기존 파이썬의 함수를 그대로 사용할 수 있는 장점 --> 성능도 python과 같은 단점 
 
@@ -21,4 +23,17 @@
 
 - [Interfacing Fortran, C, C++, and Python: Hands-on example using pybind11](https://coderefinery.github.io/mma/03-pybind11/)
 
-[Jupyter integration for pybind11](https://github.com/aldanor/ipybind)
+- [Jupyter integration for pybind11](https://github.com/aldanor/ipybind)
+
+- [Integrate Python and C++ with pybind11 - Robert Smallshire](https://www.youtube.com/watch?v=YReJ3pSnNDo): youtube
+
+
+## 4. Boost.Python
+
+최근에 업데이트 안됨 
+
+## 5. SWIG
+
+## 6. ctypes
+
+## 7. CFFI 
