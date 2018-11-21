@@ -20,4 +20,6 @@
 * [Performance](performance.md)
   * [Numba](performance/numba.md)
   * Cython
+  * [Scikit-CUDA](performance/scikit-cuda.md)
+  * [pyCUDA](performance/pycuda.md)
 
