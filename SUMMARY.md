@@ -17,4 +17,7 @@
 * [Python with C++](python-with-c++.md)
 * [opencv](opencv.md)
   * [visualization](opencv/visualization.md)
+* [Performance](performance.md)
+  * [Numba](performance/numba.md)
+  * Cython
 
