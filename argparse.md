@@ -1,3 +1,33 @@
+# [Python-Fire](https://github.com/google/python-fire)
+
+> a library for automatically generating command line interfaces
+
+`pip install fire`
+
+
+```python
+import fire
+
+def add(x, y):
+  return x + y
+
+def multiply(x, y):
+  return x * y
+
+if __name__ == '__main__':
+  fire.Fire()
+```
+
+사용 
+```python
+$ python example.py add 10 20  #함수명을 첫 인자로 활용??
+30
+$ python example.py multiply 10 20
+200
+```
+
+---
+
 # Argparse
 
 명령행 인터페이스\(커맨드 라인 인터페이스\)에서 명령행 인자를 받아서 실행시 사용
