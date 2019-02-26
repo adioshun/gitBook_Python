@@ -45,5 +45,4 @@
 * [Command-as-String](tips/command-as-string.md)
 * [xywh2xxyy](tips/xywh2xxyy.md)
 * [Python2와 3호환](tips/python2c640-3-d638-d658.md)
-* [Tools\_libs](toolslibs.md)
 
