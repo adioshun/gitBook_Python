@@ -1,4 +1,7 @@
-# Config Parger 
+# [Config Parger ](https://cozyboy.tistory.com/entry/python-config-%EC%84%A4%EC%A0%95-%EC%9A%94%EC%95%BDConfigParser)
+
+
+`pip install configparser`
 
 
 ## 1. Config.ini
@@ -17,6 +20,7 @@ option=value
 import ConfigParser
 
 config = ConfigParser.ConfigParser() 
+
 config.add_section("First Section") 
 config.set("First Section", "test1", "1") 
 config.set("First Section", "test2", "2") 
@@ -24,12 +28,17 @@ config.add_section("Second Section")
 config.set("Second Section", "test1", "1") 
 config.set("Second Section", "test2", "2")
 
+# Save
 configFile = open("config.cfg", "w") 
 config.write(configFile) 
 configFile.close()
 
+with open('example.cfg', 'wb') as configfile:
+    config.write(configfile)  ##마지막에 꼭 write 해줘야 한다
 
+# Read
 config = ConfigParser.ConfigParser() 
+#config = ConfigParser.RawConfigParser()
 config.read("config.cfg")
 
 print config.sections()
