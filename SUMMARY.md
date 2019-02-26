@@ -5,26 +5,22 @@
 * [README](README.md)
 * [References](listof-python.md)
 
-## basic 
+## basic
+
 * [Logging](logging.md)
 * [Debugging](debugging.md)
 * [Video\_handling](videohandling.md)
 * [Tools\_libs](toolslibs.md)
-* [Tips](tips.md)
-  * [xywh2xxyy](tips/xywh2xxyy.md)
-  * [Python2와 3호환](tips/python2c640-3-d638-d658.md)
+
+
 * [IDE](ide.md)
 * [Package\_Pandas](packagepandas.md)
 * [Package\_Numpy](packagenumpy.md)
   * [Indexing\_slicing](packagenumpy/indexingslicing.md)
-* [\[Tip\] Command as string](tip-command-as-string.md)
 * [Python with C++](python-with-c++.md)
 * [opencv](opencv.md)
   * [visualization](opencv/visualization.md)
 * [matlab\_conversion](matlabconversion.md)
-
-
-
 
 ## Parser
 
@@ -42,10 +38,10 @@
 * [pyCUDA](performance/pycuda.md)
 * [cupy](performance/cupy.md)
 
-
 ## Tips
 
+* [진행바](tips/progress-bar.md)
 * [Command-as-String](tips/command-as-string.md)
-
-
+* [xywh2xxyy](tips/xywh2xxyy.md)
+* [Python2와 3호환](tips/python2c640-3-d638-d658.md)
 
