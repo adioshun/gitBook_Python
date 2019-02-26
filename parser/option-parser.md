@@ -1,4 +1,6 @@
-# [Python-Fire](https://github.com/google/python-fire)
+# Option Parser
+
+## 1. [Python-Fire](https://github.com/google/python-fire)
 
 > a library for automatically generating command line interfaces
 
@@ -28,14 +30,14 @@ $ python example.py multiply 10 20
 
 ---
 
-# Argparse
+## 2. [Argparse](https://blog.naver.com/youngchanmm/221364687902)
 
 명령행 인터페이스\(커맨드 라인 인터페이스\)에서 명령행 인자를 받아서 실행시 사용
 
 파이썬 3에서 새롭게 추가된 모듈  
 파이썬 2에서 사용할 때에는 pip으로 설치​\(`pip install argparse`\)
 
-## 1. 스트링 인자
+### 2.1 스트링 인자
 
 ```python
 import argparse
@@ -84,7 +86,7 @@ print(args.echo)
 
 * 각 인자의 리스트를 받아 이를 파싱한 결과를 되돌려 준다. 파싱된 결과는 하나의 네임스페이스를 갖는 객체로 모든 스위치 이름들은 이 객체의 속성 이름으로 정의되어 있다.
 
-## 2. 선택 인자
+### 2.2 선택 인자
 
 ```python
 import argparse
@@ -96,6 +98,10 @@ args = parser.parse_args()
 if args.verbosity:
     print("verbosity turned on")
 ```
+
+
+---
+
 
 
 
