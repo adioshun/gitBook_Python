@@ -1,7 +1,11 @@
 # Summary
 
+## Python Snippet
+
 * [README](README.md)
 * [References](listof-python.md)
+
+## basic 
 * [Logging](logging.md)
 * [Debugging](debugging.md)
 * [Video\_handling](videohandling.md)
@@ -19,6 +23,9 @@
   * [visualization](opencv/visualization.md)
 * [matlab\_conversion](matlabconversion.md)
 
+
+
+
 ## Parser
 
 * [README](parser/README.md)
@@ -34,4 +41,11 @@
 * [Scikit-CUDA](performance/scikit-cuda.md)
 * [pyCUDA](performance/pycuda.md)
 * [cupy](performance/cupy.md)
+
+
+## Tips
+
+* [Command-as-String](tips/command-as-string.md)
+
+
 
