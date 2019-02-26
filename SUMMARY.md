@@ -40,6 +40,7 @@
 
 ## Tips
 
+* [Env설정](tips/env-setup.md)
 * [진행바](tips/progress-bar.md)
 * [Command-as-String](tips/command-as-string.md)
 * [xywh2xxyy](tips/xywh2xxyy.md)
