@@ -7,11 +7,13 @@
 
 ## basic
 
+* [\_\_init.py\_\_](basic/init.md)
+* [Structure](basic/structure.md)
+
 * [Logging](logging.md)
 * [Debugging](debugging.md)
 * [Video\_handling](videohandling.md)
 
----
 
 * [IDE](ide.md)
 * [Package\_Pandas](packagepandas.md)
