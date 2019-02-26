@@ -31,7 +31,7 @@
 
 ## Performance 
 
-* [Performance](performance.md)
+* [README](performance/README.md)
 * [Numba](performance/numba.md)
 * [Scikit-CUDA](performance/scikit-cuda.md)
 * [pyCUDA](performance/pycuda.md)
