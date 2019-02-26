@@ -36,3 +36,48 @@ print config.sections()
 print config.get("First Section", "test2") 
 print config.options("Second Section") 
 ```
+
+Or
+
+```python 
+
+import configparser
+
+config = configparser.ConfigParser()
+CONFIG_FILE_NAME = 'server.config'
+
+# config file write to server.config
+config['DEFAULT'] = {
+    'debug': True
+}
+config['web_server'] = {
+    'host': '127.0.0.1',
+    'port': 8080
+}
+config['db_server'] = {
+    'host': '127.0.0.1',
+    'port': 3306
+}
+
+with open(CONFIG_FILE_NAME,'w') as config_file:
+    config.write(config_file)
+
+# write to config file
+[DEFAULT]
+debug = True
+
+[web_server]
+host = 127.0.0.1
+port = 8080
+
+[db_server]
+host = 127.0.0.1
+port = 3306
+
+
+# config file read from server.config
+config.read(CONFIG_FILE_NAME)
+print(config['web_server'])
+print(config['web_server']['host'])
+print(config['web_server']['port'])
+```
