@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
-* [List\_of\_Python](listof-python.md)
+* [README](README.md)
+* [References](listof-python.md)
 * [Logging](logging.md)
 * [Debugging](debugging.md)
 * [Video\_handling](videohandling.md)
@@ -18,11 +18,21 @@
 * [Python with C++](python-with-c++.md)
 * [opencv](opencv.md)
   * [visualization](opencv/visualization.md)
-* [Performance](performance.md)
-  * [Numba](performance/numba.md)
-  * Cython
-  * [Scikit-CUDA](performance/scikit-cuda.md)
-  * [pyCUDA](performance/pycuda.md)
-  * [cupy](performance/cupy.md)
+
 * [matlab\_conversion](matlabconversion.md)
 
+
+## Parser
+
+* [README](parser/README.md)
+* [option-Parser](parser/option-parser.md)
+* [Config-Parser](parser/config-parser.md)
+* [Serial-Parser](parser/serial-parser.md)
+
+## Performance 
+
+* [Performance](performance.md)
+* [Numba](performance/numba.md)
+* [Scikit-CUDA](performance/scikit-cuda.md)
+* [pyCUDA](performance/pycuda.md)
+* [cupy](performance/cupy.md)
