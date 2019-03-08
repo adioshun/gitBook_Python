@@ -9,6 +9,7 @@
 
 * [\_\_init.py\_\_](basic/init.md)
 * [Structure](basic/structure.md)
+* [I/O](basic/io.md)
 
 * [Logging](logging.md)
 * [Debugging](debugging.md)
