@@ -10,22 +10,31 @@
 - 동시 수행을 위한 프로세스 풀을 만들어 놓고 사용한다.
 
 ```python 
-from multiprocessing import Pool
-
-import os
-import math
-
-def f(x):
-    print("값", x, "에 대한 작업 Pid = ",os.getpid())
-    time.sleep(1)
-    return x*x
-
+import multiprocessing
+import time
+ 
+#시작시간
+start_time = time.time()
+ 
+#멀티쓰레드 사용 하는 경우 (20만 카운트)
+#Pool 사용해서 함수 실행을 병렬
+def count(name):
+    for i in range(1,50001):
+        print(name," : ",i)
+ 
+num_list = ['p1', 'p2', 'p3', 'p4']
+ 
 if __name__ == '__main__':
-    p = Pool(3)
-    startTime = int(time.time())
-    print(p.map(f, range(0,10)))  // 함수와 인자값을 맵핑하면서 데이터를 분배한다
-    endTime = int(time.time())
-    print("총 작업 시간", (endTime - startTime))
+    #멀티 쓰레딩 Pool 사용
+    pool = multiprocessing.Pool(processes=2) # 현재 시스템에서 사용 할 프로세스 개수
+    pool.map(count, num_list)
+    pool.close()
+    pool.join()
+ 
+print("--- %s seconds ---" % (time.time() - start_time))
+
+
+#출처: https://niceman.tistory.com/145 [좋은사람의 개발 노트]
 ```
 
 
