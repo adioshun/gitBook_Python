@@ -5,23 +5,27 @@
 
 - mutiprocessing 에서는 대표적으로 Pool 과 Process 를 이용하여 하나 이상의 자식 process를 생성 병렬구조로 처리
 
-## 1. [Pool을 이용한 멀티 프로세싱 ](https://data-rider.blogspot.com/2015/07/blog-post_17.html)
+## 1. [Pool을 이용한 멀티 프로세싱 ](https://m.blog.naver.com/townpharm/220951524843)
 
 - 동시 수행을 위한 프로세스 풀을 만들어 놓고 사용한다.
 
 ```python 
 from multiprocessing import Pool
 
-def f(task):
-    time.sleep(2)
-    return ("[ task id : %d - print time : %s ]" % (task,datetime.now().strftime('%s')))
+import os
+import math
+
+def f(x):
+    print("값", x, "에 대한 작업 Pid = ",os.getpid())
+    time.sleep(1)
+    return x*x
 
 if __name__ == '__main__':
-    MAX_CORE = 4
-    TASKS = 10
-    with Pool(processes=MAX_CORE-1) as pool:
-        out =pool.map(f,range(1,TASKS+1))
-    for i in out: print(i)
+    p = Pool(3)
+    startTime = int(time.time())
+    print(p.map(f, range(0,10)))  // 함수와 인자값을 맵핑하면서 데이터를 분배한다
+    endTime = int(time.time())
+    print("총 작업 시간", (endTime - startTime))
 ```
 
 
@@ -40,22 +44,14 @@ if __name__ == '__main__':
 
 
 ```python 
-from multiprocessing import Process, Queue
-from datetime import datetime
-import time
+from multiprocessing import Process
 
-def f(task):
-    time.sleep(2)
-    print ("[ task id : %d - print time : %s ]" % (task,datetime.now().strftime('%s')))
+def f(name):
+    print 'hello', name
 
 if __name__ == '__main__':
-    MAX_CORE = 4
-    TASKS = 10
-    for i in range(1,TASKS+1):
-        p = Process(target=f, args=(i,))
-        p.start()
-        if i % ( MAX_CORE - 1 ) == 0:
-            p.join()
+    p = Process(target=f, args=('bob',))
+    p.start()
     p.join()
 ```
 
