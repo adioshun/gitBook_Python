@@ -1,7 +1,7 @@
 ## Load & Save
 
 ```python
-In [2]: np.savetxt('test1.txt', a, fmt='%d')
+In [2]: np.savetxt('test1.txt', a, fmt='%d') # fmt='%d' for 3D
 In [3]: b = np.loadtxt('test1.txt', dtype=int)
 
 In [5]: a.tofile('test2.dat')
