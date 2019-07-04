@@ -21,8 +21,6 @@
 * [README](Packages/README.md)
 * [Numpy](Packages/Numpy/README.md)
   * [인덱싱-슬라이싱](Packages/Numpy/Indexing-Slicing.md)
-* [Numpy](Packages/Numpy.md)
-  * [인덱싱-슬라이싱](Packages/Numpy-Indexing-Slicing.md)
 * [Package\_Pandas](packagepandas.md)
 * [Python with C++](python-with-c++.md)
 * [opencv](opencv.md)
