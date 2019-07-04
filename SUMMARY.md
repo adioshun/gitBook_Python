@@ -3,6 +3,7 @@
 ## Python Snippet
 
 * [README](README.md)
+* [IDE](ide.md)
 * [References](listof-python.md)
 
 ## basic
@@ -17,7 +18,11 @@
 
 ---
 
-* [IDE](ide.md)
+## Package
+
+* [README](Packages/README.md)
+* [Numpy](Packages/Numpy.md)
+  * [Numpy](Packages/Numpy-Indexing-Slicing.md)
 * [Package\_Pandas](packagepandas.md)
 * [Package\_Numpy](packagenumpy.md)
   * [Indexing\_slicing](packagenumpy/indexingslicing.md)
