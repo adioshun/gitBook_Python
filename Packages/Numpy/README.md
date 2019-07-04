@@ -2,10 +2,14 @@
 
 ## 1. 생성 
 
+
+![](https://i.imgur.com/ffRNLl3.png)
 ![](https://i.imgur.com/2T4hAsd.png)
 
 
 ![](https://i.imgur.com/eM5CoUd.png)
+
+> [A Visual Intro to NumPy and Data Representation](https://jalammar.github.io/visual-numpy/?fbclid=IwAR2ROHEK__y-0zvZpqGeZc9DzAtsworArtmCPVv750Egw55Jad-czKHwKLA)
 
 ## Load & Save
 
