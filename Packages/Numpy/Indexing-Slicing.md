@@ -1,3 +1,15 @@
+# Indexing 
+
+
+
+![](https://i.imgur.com/YF4PgSU.png)
+![](https://i.imgur.com/5hkA6ec.png)
+
+
+
+
+
+---
 #조건을 만족(라벨별로) 하는 값만 뽑아 오기 
 label1 = concate[concate[:,3]==1]
 

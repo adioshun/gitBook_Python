@@ -1,3 +1,12 @@
+# Numpy 
+
+## 1. 생성 
+
+![](https://i.imgur.com/2T4hAsd.png)
+
+
+![](https://i.imgur.com/eM5CoUd.png)
+
 ## Load & Save
 
 ```python
