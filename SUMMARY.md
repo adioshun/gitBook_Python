@@ -26,6 +26,7 @@
 * [opencv](opencv.md)
   * [visualization](opencv/visualization.md)
 * [matlab\_conversion](matlabconversion.md)
+* [20가지 실용적인 파이썬 라이브러리](http://www.itworld.co.kr/news/118829?page=0,1)
 
 ## Parser
 
