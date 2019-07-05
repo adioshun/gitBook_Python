@@ -1,7 +1,3 @@
-[NumPy와 C++ Extensions의 성능 비교](http://tech.kakao.com/2018/05/15/python-numpy-extensions/): [추천] 전체 비교 & 코드 포함 
-
-[Wrapping C with Python: 3D image segmentation with region growing](http://notmatthancock.github.io/2017/10/09/region-growing-wrapping-c.html)
-
 
 
 ## 1. C Extension (일반적으로 권장)
@@ -37,3 +33,15 @@
 ## 6. ctypes
 
 ## 7. CFFI 
+
+
+---
+
+- [python C 확장](https://nbviewer.jupyter.org/github/KaggleBreak/interpy-kr/blob/master/day6/python_c_extension.ipynb?fbclid=IwAR3EcfFidoSDkRAsoygM4JY-BnOWgyjFlALR0f3JaX-YOTJ0y4HLUa4JES0)
+
+- [NumPy와 C++ Extensions의 성능 비교](http://tech.kakao.com/2018/05/15/python-numpy-extensions/): [추천] 전체 비교 & 코드 포함 
+
+- [Wrapping C with Python: 3D image segmentation with region growing](http://notmatthancock.github.io/2017/10/09/region-growing-wrapping-c.html)
+
+
+
