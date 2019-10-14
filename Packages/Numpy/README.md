@@ -40,3 +40,11 @@ label1 = np.delete(label1, (3), axis=1)
 # 해당 포인트 제거하기 
 extract = concate[concate[:,3] != 1]
 
+# 새 col 추가 
+
+```python 
+a = np.array([[1,2,3],[2,3,4],[1,2,3],[1,2,3]])
+z = np.zeros((a.shape[0],1))
+np.append(B, z, axis=1)
+
+```
