@@ -40,6 +40,7 @@
 
 * [README](performance/README.md)
 * [메모리사용량](performance/monitoring.md)
+* [pypy](performance/pypy.md)
 * [Numba](performance/numba.md)
 * [Scikit-CUDA](performance/scikit-cuda.md)
 * [pyCUDA](performance/pycuda.md)
