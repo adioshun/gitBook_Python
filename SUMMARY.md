@@ -3,7 +3,7 @@
 ## Python Snippet
 
 * [README](README.md)
-* [IDE](ide.md)
+* [IDE](ide.md)  : IDE 설치, 셋업, 
 * [References](listof-python.md)
 
 ## basic
